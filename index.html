@@ -4,9 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/desktop.css">
+    <link rel="stylesheet" href="./css/mobile.css">
     <title>Home</title>
   </head>
   <body>
+    <!-- Fondo de video -->
     <div class="backGround">
       <video autoplay muted loop>
         <source src="./media/7020180_Smoke_Fire_3840x2160.mp4" type="video/mp4">
@@ -14,23 +17,60 @@
       </video>
     </div>
 
+    <!-- Contenedor principal -->
     <div class="container">
-      <!-- Barra de navegación -->
-      <section class="navBar">
-        <nav class="navHome">
-            <a>Work</a>
-            <a>About</a>
-            <a>Resume</a>
+      <!-- Home Section -->
+      <section class="HomeSection">
+        <!-- Barra de navegación -->
+        <div class="navBar">
+          <nav class="navHome">
+            <a href="#home">Home</a>
+            <a href="#work">Work</a>
+            <a href="#about">About</a>
+            <a href="#resume">Resume</a>
+          </nav>
+        </div>
+
+        <!-- Información principal -->
+        <div class="content-first">
+          <div class="infoHome">
+            <p>FullStack Developer</p>
+            <h1>MIGUEL SEBASTIAN POVEDA</h1>
+            <p>Texto o contenido de la página aquí</p>
+          </div>
+        </div>
       </section>
 
-      <!-- Información principal -->
-      <div class="content-first">
-        <div class="infoHome">
-          <p>FullStack Developer</p>
-          <h1>MIGUEL SEBASTIAN POVEDA</h1>
-          <p>Texto o contenido de la página aquí</p>
+      <!-- Sección de Trabajo -->
+      <section id="work" class="WorkSection">
+        <h1>My Projects</h1>
+        <div class="projects">
+          <div class="project">
+            <h2>Project 1</h2>
+            <p>Descripción del proyecto aquí</p>
+          </div>
+          <div class="project">
+            <h2>Project 2</h2>
+            <p>Descripción del proyecto aquí</p>
+          </div>
+          <div class="project">
+            <h2>Project 3</h2>
+            <p>Descripción del proyecto aquí</p>
+          </div>
         </div>
-      </div>
+      </section>
+
+      <!-- Sección Acerca de mí -->
+      <section id="about" class="AboutSection">
+        <h1>About Me</h1>
+        <p>Información personal, habilidades, etc.</p>
+      </section>
+
+      <!-- Sección de Resumen -->
+      <section id="resume" class="ResumeSection">
+        <h1>Resume</h1>
+        <p>Detalles de mi experiencia y educación.</p>
+      </section>
     </div>
   </body>
 </html>
