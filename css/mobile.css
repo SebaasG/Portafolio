@@ -1,0 +1,27 @@
+/* Estilos para móviles */
+@media (max-width: 768px) {
+
+    .navHome {
+        width: 90%;
+        margin-left: 5%;
+        font-size: 16px;
+        justify-content: space-around;
+    }
+
+    .infoHome {
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    .HomeSection h1 {
+        font-size: 2em;
+    }
+
+    .WorkSection h1, .AboutSection h1, .ResumeSection h1 {
+        font-size: 1.5em;
+    }
+
+    .projects {
+        flex-direction: column;
+    }
+}
