@@ -1,27 +1,136 @@
-/* Estilos para móviles */
-@media (max-width: 768px) {
-
-    .navHome {
-        width: 90%;
-        margin-left: 5%;
-        font-size: 16px;
-        justify-content: space-around;
+/* Media Queries para Dispositivos Móviles */
+@media (max-width: 1024px) {
+    .projects {
+        flex-direction: column;
     }
 
-    .infoHome {
-        padding: 10px;
-        font-size: 14px;
+    .nav .main_list {
+        display: none;
     }
 
-    .HomeSection h1 {
-        font-size: 2em;
+    .nav .main_list.active {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
 
-    .WorkSection h1, .AboutSection h1, .ResumeSection h1 {
-        font-size: 1.5em;
+    .nav div.main_list ul li a {
+        font-size: 3rem;
+    }
+
+    .nav div.main_list ul {
+        list-style: none;
+        width: 80%;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        gap: 15px;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    /* VideoSection - Ajustes para dispositivos móviles */
+    .videoSection {
+        position: relative;
+        width: 100%;
+        height: 100vh;
+        overflow: hidden;
+        animation: fadeIn 1s ease-in-out;
+    }
+
+    .container h1 {
+        font-size: 3rem;
+        animation: slideFromBottom 1s ease-out;
+    }
+
+    .container p {
+        font-size: 1.8rem;
+        animation: slideFromBottom 1s ease-out 0.3s;
+    }
+
+    /* WorkSection - Ajustes para dispositivos móviles */
+    .workSection {
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: #f4f4f4;
+        color: #333;
+        opacity: 0;
+        animation: fadeIn 2s ease-in-out 0.5s forwards;
     }
 
     .projects {
+        display: flex;
         flex-direction: column;
+        gap: 15px;
+        justify-content: center;
+        opacity: 0;
+        animation: fadeIn 1.5s ease-in-out 1s forwards;
+    }
+
+    .project {
+        background-color: rgba(0, 0, 0, 0.1);
+        padding: 20px;
+        border-radius: 10px;
+        text-align: center;
+        transform: translateY(50px);
+        animation: slideUp 0.5s ease-out forwards;
+        animation-delay: 1s;
+    }
+
+    /* AboutSection - Ajustes para dispositivos móviles */
+    .aboutSection {
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        background-color: #333;
+        color: white;
+        padding: 20px;
+        opacity: 0;
+        animation: fadeIn 2s ease-in-out 1.5s forwards;
+    }
+
+    /* ResumeSection - Ajustes para dispositivos móviles */
+    .resumeSection {
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        background-color: #222;
+        color: white;
+        padding: 20px;
+        opacity: 0;
+        animation: fadeIn 2s ease-in-out 2s forwards;
+    }
+
+    /* Navbar - Ajustes para centrar verticalmente */
+    .nav {
+        position: fixed;
+        height: 8% !important;
+        width: 100%;
+        background-color: #333;
+        z-index: 1000;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+        transition: transform 0.3s ease-in-out;
+        display: flex;
+        justify-content: center;
+        align-items: center; /* Centra el contenido verticalmente */
+    }
+
+    .nav .main_list {
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 }

@@ -1,30 +1,76 @@
-/* Estilos para Escritorio */
+/* Media Queries para Pantallas grandes */
 @media (min-width: 1024px) {
-
-    .navHome {
-        width: 40%;
-        margin-left: 30%;
-        font-size: 20px;
+    /* VideoSection */
+    .videoSection {
+        height: 100vh;
     }
 
-    .infoHome {
-        padding: 30px;
-        font-size: 18px;
+    .container h1 {
+        font-size: 6rem;
     }
 
-    .HomeSection h1 {
-        font-size: 3em;
+    .container p {
+        font-size: 3rem;
     }
 
-    .WorkSection h1, .AboutSection h1, .ResumeSection h1 {
-        font-size: 2.5em;
-    }
-
+    /* WorkSection */
     .projects {
-        flex-direction: row;
+        display: flex;
+        justify-content: space-between;
     }
 
     .project {
         width: 30%;
+    }
+
+    /* Navbar */
+    .nav .main_list {
+        display: flex;
+    }
+
+    .nav div.main_list ul li a {
+        font-size: 2rem;
+    }
+    .menu-toggle {
+        display: none;
+        font-size: 2.5rem;
+        color: #fff;
+        padding: 10px;
+        cursor: pointer;
+        transition: transform 0.3s ease;
+    }
+    
+    .menu-toggle:hover {
+        transform: scale(1.1);
+    }
+    
+    .nav .main_list {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+    
+    .nav div.main_list ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        gap: 15px;
+    }
+    
+    .nav div.main_list ul li {
+        padding: 15px;
+    }
+    
+    .nav div.main_list ul li a {
+        text-decoration: none;
+        color: #fff;
+        font-size: 2rem;
+        transition: color 0.3s ease;
+    }
+    
+    .nav div.main_list ul li a:hover {
+        color: #00E676;
     }
 }
