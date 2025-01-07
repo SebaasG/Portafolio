@@ -1,76 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./css/style.css" />
-    <link rel="stylesheet" href="./css/desktop.css">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/mobile.css">
-    <title>Home</title>
-  </head>
-  <body>
-    <!-- Fondo de video -->
-    <div class="backGround">
-      <video autoplay muted loop>
-        <source src="./media/7020180_Smoke_Fire_3840x2160.mp4" type="video/mp4">
-        Tu navegador no soporta el formato del video
-      </video>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/desktop.css">
+    <title>Secciones con Video</title>
+</head>
+<body>
+
+    <div class="nav">
+  
+        <div class="main_list">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
     </div>
 
-    <!-- Contenedor principal -->
-    <div class="container">
-      <!-- Home Section -->
-      <section class="HomeSection">
-        <!-- Barra de navegación -->
-        <div class="navBar">
-          <nav class="navHome">
-            <a href="#home">Home</a>
-            <a href="#work">Work</a>
-            <a href="#about">About</a>
-            <a href="#resume">Resume</a>
-          </nav>
+    <!-- Sección del video -->
+    <section class="videoSection">
+        <div class="backGround">
+            <video autoplay muted loop>
+                <source src="./media/7020180_Smoke_Fire_3840x2160.mp4" type="video/mp4">
+                Tu navegador no soporta videos.
+            </video>
         </div>
-
-        <!-- Información principal -->
-        <div class="content-first">
-          <div class="infoHome">
-            <p>FullStack Developer</p>
-            <h1>MIGUEL SEBASTIAN POVEDA</h1>
-            <p>Texto o contenido de la página aquí</p>
-          </div>
+        <div class="container">
+            <h1>Bienvenido</h1>
+            <p>Explora nuestro sitio web</p>
         </div>
-      </section>
+    </section>
 
-      <!-- Sección de Trabajo -->
-      <section id="work" class="WorkSection">
-        <h1>My Projects</h1>
+    <!-- Segunda sección -->
+    <section class="workSection">
+        <h1>Proyectos</h1>
         <div class="projects">
-          <div class="project">
-            <h2>Project 1</h2>
-            <p>Descripción del proyecto aquí</p>
-          </div>
-          <div class="project">
-            <h2>Project 2</h2>
-            <p>Descripción del proyecto aquí</p>
-          </div>
-          <div class="project">
-            <h2>Project 3</h2>
-            <p>Descripción del proyecto aquí</p>
-          </div>
+            <div class="project">Proyecto 1</div>
+            <div class="project">Proyecto 2</div>
+            <div class="project">Proyecto 3</div>
         </div>
-      </section>
+    </section>
 
-      <!-- Sección Acerca de mí -->
-      <section id="about" class="AboutSection">
-        <h1>About Me</h1>
-        <p>Información personal, habilidades, etc.</p>
-      </section>
+    <!-- Tercera sección -->
+    <section class="aboutSection">
+        <h1>Sobre mí</h1>
+        <p>Texto sobre el autor o contenido relacionado.</p>
+    </section>
 
-      <!-- Sección de Resumen -->
-      <section id="resume" class="ResumeSection">
-        <h1>Resume</h1>
-        <p>Detalles de mi experiencia y educación.</p>
-      </section>
-    </div>
-  </body>
+    <!-- Cuarta sección -->
+    <section class="resumeSection">
+        <h1>Resumen</h1>
+        <p>Información de resumen o CV.</p>
+    </section>
+
+    <script src="./js/app.js"></script>
+</body>
 </html>
