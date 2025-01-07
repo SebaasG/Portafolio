@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,22 +9,23 @@
     <link rel="stylesheet" href="./css/desktop.css">
     <title>Secciones con Video</title>
 </head>
+
 <body>
 
     <div class="nav">
-  
         <div class="main_list">
             <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Contact</a></li>
+                <!-- Enlaces a las secciones utilizando anclas -->
+                <li><a href="#homeSection">Home</a></li>
+                <li><a href="#aboutSection">About me</a></li>
+                <li><a href="#workSection">Projects</a></li>
+                <li><a href="#contactSection">Contact</a></li>
             </ul>
         </div>
     </div>
 
     <!-- Sección del video -->
-    <section class="videoSection">
+    <section class="videoSection" id="homeSection">
         <div class="backGround">
             <video autoplay muted loop>
                 <source src="./media/7020180_Smoke_Fire_3840x2160.mp4" type="video/mp4">
@@ -31,33 +33,179 @@
             </video>
         </div>
         <div class="container">
-            <h1>Bienvenido</h1>
-            <p>Explora nuestro sitio web</p>
+            <h1>FullStack Developer</h1>
+            <p>Miguel Sebastian Poveda</p>
         </div>
     </section>
 
-    <!-- Segunda sección -->
-    <section class="workSection">
+    <section class="aboutSection" id="aboutSection">
+        <h1>About me</h1>
+        <p class="intro-text">Soy un desarrollador FullStack Junior apasionado por aprender y crear soluciones
+            innovadoras. Me encanta enfrentarme a nuevos retos y explorar tanto el backend como el frontend. Cada
+            proyecto es una oportunidad para crecer y aportar creatividad, siempre buscando un equilibrio perfecto entre
+            funcionalidad y diseño. Si buscas a alguien con energía y enfoque, ¡estoy listo para el siguiente desafío!
+        </p>
+
+        <div class="skills">
+            <!-- Java -->
+            <div class="skill-card">
+                <div class="card-content">
+                    <img src="https://cdn-icons-png.flaticon.com/256/226/226777.png" alt="Java">
+                    <h2>Java</h2>
+                </div>
+            </div>
+
+            <!-- MySQL -->
+            <div class="skill-card">
+                <div class="card-content">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSMk3C5ZUO0HUurI0wYU-yK6gpjOwXpwshxA&s"
+                        alt="MySQL">
+                    <h2>MySQL</h2>
+                </div>
+            </div>
+
+            <!-- Python -->
+            <div class="skill-card">
+                <div class="card-content">
+                    <img src="https://img.icons8.com/color/512/python.png" alt="Python">
+                    <h2>Python</h2>
+                </div>
+            </div>
+
+            <!-- JavaScript -->
+            <div class="skill-card">
+                <div class="card-content">
+                    <img src="https://img.icons8.com/color/512/javascript.png" alt="JavaScript">
+                    <h2>JavaScript</h2>
+                </div>
+            </div>
+
+            <!-- Node.js -->
+            <div class="skill-card">
+                <div class="card-content">
+                    <img src="https://img.icons8.com/?size=512&id=54087&format=png" alt="Node.js">
+                    <h2>Node.js</h2>
+                </div>
+            </div>
+
+            <!-- Express -->
+            <div class="skill-card">
+                <div class="card-content">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4vn2Ozg81g7Figi_m4SCFEYvuqdW934j3eg&s"
+                        alt="Express">
+                    <h2>Express</h2>
+                </div>
+            </div>
+
+            <!-- Postgres -->
+            <div class="skill-card">
+                <div class="card-content">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7njkpByn_HMCxLbNBNcGg7E3zyjfBP7Ux6Q&s"
+                        alt="Postgres">
+                    <h2>Postgres</h2>
+                </div>
+            </div>
+
+            <!-- Spring Boot -->
+            <div class="skill-card">
+                <div class="card-content">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTg_3AVdaaN-KeK2mih8k2H8_5f_YCTA4z3Qg&s"
+                        alt="Spring Boot">
+                    <h2>Spring Boot</h2>
+                </div>
+            </div>
+
+            <div class="skill-card">
+                <div class="card-content">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRoh5SY3J2BsoecJ8TsxtGX-34_b5HCIG6PIA&s"
+                        alt="Git Hub">
+                    <h2>Git Hub</h2>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="workSection" id="workSection">
         <h1>Proyectos</h1>
         <div class="projects">
-            <div class="project">Proyecto 1</div>
-            <div class="project">Proyecto 2</div>
-            <div class="project">Proyecto 3</div>
+            <div class="project">
+                <div class="project-card">
+                    <img src="./media/fondo proyecto defaultsYougns.png" alt="Proyecto 1">
+                    <div class="project-info">
+                        <h3>GAFC</h3>
+                        <p>Este proyecto consiste en el desarrollo de una aplicación para gestionar los resultados de
+                            pruebas psicotécnicas en procesos de selección de personal. Permite ingresar, almacenar y
+                            analizar los resultados de manera eficiente, facilitando la toma de decisiones en la
+                            selección de candidatos y generando reportes automáticos para una evaluación objetiva y
+                            ágil.</p>
+                        <a href="https://sebaasg.github.io/GAFC-DefaultYoungs/" target="_blank" class="btn-github">View
+                            Proyect</a>
+                    </div>
+                </div>
+            </div>
+            <div class="project">
+                <div class="project-card">
+                    <img src="./media/gestion de tareas.png" alt="Proyecto 2">
+                    <div class="project-info">
+                        <h3>Gestion de Tareas</h3>
+                        <p>Aplicación de gestión de tareas conectada a una base de datos MySQL, donde cada usuario puede
+                            visualizar y organizar sus tareas en diversas categorías, facilitando un seguimiento
+                            eficiente y personalizado de sus responsabilidades.</p>
+                        <a href="https://sebaasg.github.io/Gesti-on-de-tareas/" target="_blank" class="btn-github">View
+                            Proyect</a>
+                    </div>
+                </div>
+            </div>
+            <div class="project">
+                <div class="project-card">
+                    <img src="./media/library.jpg" alt="Proyecto 3">
+                    <div class="project-info">
+                        <h3>Library</h3>
+                        <p>Proyecto colaborativo para la creación de una biblioteca virtual, donde los usuarios pueden
+                            buscar y reservar libros almacenados en una base de datos, optimizando la gestión del stock
+                            y mejorando la experiencia del usuario.</p>
+                        <a href="https://github.com/SebaasG/LibraryCompartido" target="_blank" class="btn-github">
+                            View Proyect</a>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
-    <!-- Tercera sección -->
-    <section class="aboutSection">
-        <h1>Sobre mí</h1>
-        <p>Texto sobre el autor o contenido relacionado.</p>
-    </section>
+    <!-- Quinta sección: Contacto -->
+    <section class="contactSection" id="contactSection">
+        <!-- Formulario de contacto -->
+        <form action="#" method="post" class="contact-form">
+            <div class="form-group">
+                <label for="name">Nombre:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
 
-    <!-- Cuarta sección -->
-    <section class="resumeSection">
-        <h1>Resumen</h1>
-        <p>Información de resumen o CV.</p>
+            <div class="form-group">
+                <label for="email">Correo electrónico:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+
+            <div class="form-group">
+                <label for="message">Mensaje:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+            </div>
+
+            <button type="submit" class="btn-submit">Enviar</button>
+        </form>
+
+        <!-- Redes sociales -->
+        <div class="socials">
+            <h2>Sígueme en mis redes sociales:</h2>
+            <ul>
+                <li><a href="https://www.linkedin.com/in/miguel-sebastian-poveda-grimaldos-a901a1291/" target="_blank"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVZ7ih0RMvWGQ4X98WXAZofSI-cGiWSFs-5Q&s" alt=""> LinkedIn</a></li>
+                <li><a href="https://github.com/SebaasG" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt=""> GitHub</a></li>
+                <li><a href="https://www.instagram.com/sebaasg_/" target="_blank"><img src="https://1000marcas.net/wp-content/uploads/2019/11/Instagram-Logo-2016.png" alt=""> Instagram</a></li>
+            </ul>
+        </div>
     </section>
 
     <script src="./js/app.js"></script>
 </body>
+
 </html>
